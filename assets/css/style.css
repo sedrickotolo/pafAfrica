@@ -9,7 +9,7 @@ body {
 }
 
 a {
-  color: #106eea;
+  color: #00a651 ;
   text-decoration: none;
 }
 
@@ -110,7 +110,7 @@ h6 {
 # Top Bar
 --------------------------------------------------------------*/
 #topbar {
-  background: #106eea;
+  background: #00a651 ;
   height: 40px;
   font-size: 14px;
   transition: all 0.5s;
@@ -247,7 +247,7 @@ h6 {
   height: 2px;
   bottom: -6px;
   left: 0;
-  background-color: #106eea;
+  background-color: #00a651 ;
   visibility: hidden;
   width: 0px;
   transition: all 0.3s ease-in-out 0s;
@@ -264,7 +264,7 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: #106eea;
+  color: #00a651;
 }
 
 
@@ -355,7 +355,7 @@ h6 {
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
-  color: #106eea;
+  color: #fad994 ;
 }
 
 .navbar-mobile .getstarted,
@@ -422,7 +422,7 @@ h6 {
   border-radius: 4px;
   transition: 0.5s;
   color: #fff;
-  background: #106eea;
+  background: #00a651;
 }
 
 #hero .btn-get-started:hover {
@@ -448,7 +448,7 @@ h6 {
 }
 
 #hero .btn-watch-video:hover {
-  color: #106eea;
+  color: #00a651;
 }
 
 #hero .btn-watch-video:hover i {
@@ -526,7 +526,7 @@ section {
 }
 
 .section-title h3 span {
-  color: #106eea;
+  color: #00a651;
 }
 
 .section-title p {
@@ -622,7 +622,7 @@ section {
 }
 
 .featured-services .icon-box:hover::before {
-  background: #106eea;
+  background: #00a651;
   top: 0;
   border-radius: 0px;
 }
@@ -634,7 +634,7 @@ section {
 .featured-services .icon i {
   font-size: 48px;
   line-height: 1;
-  color: #106eea;
+  color: #00a651;
   transition: all 0.3s ease-in-out;
 }
 
@@ -692,7 +692,7 @@ section {
   font-size: 24px;
   padding: 20px;
   margin-right: 15px;
-  color: #106eea;
+  color: #00a651;
   border-radius: 50px;
 }
 
@@ -743,7 +743,7 @@ section {
   width: 1px;
   height: 10px;
   transition: 0.9s;
-  background-color: #106eea;
+  background-color: #00a651;
 }
 
 /*--------------------------------------------------------------
@@ -767,7 +767,7 @@ section {
   left: 50%;
   transform: translateX(-50%);
   font-size: 24px;
-  background: #106eea;
+  background: #00a651;
   color: #fff;
   width: 56px;
   height: 56px;
