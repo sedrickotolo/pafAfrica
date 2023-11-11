@@ -9,7 +9,7 @@ body {
 }
 
 a {
-  color: #00a651 ;
+  color: #106eea;
   text-decoration: none;
 }
 
@@ -110,7 +110,7 @@ h6 {
 # Top Bar
 --------------------------------------------------------------*/
 #topbar {
-  background: #00a651 ;
+  background: #106eea;
   height: 40px;
   font-size: 14px;
   transition: all 0.5s;
@@ -247,7 +247,7 @@ h6 {
   height: 2px;
   bottom: -6px;
   left: 0;
-  background-color: #00a651 ;
+  background-color: #106eea;
   visibility: hidden;
   width: 0px;
   transition: all 0.3s ease-in-out 0s;
@@ -264,7 +264,7 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: #00a651;
+  color: #106eea;
 }
 
 
@@ -355,7 +355,7 @@ h6 {
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
-  color: #fad994 ;
+  color: #106eea;
 }
 
 .navbar-mobile .getstarted,
@@ -372,9 +372,26 @@ h6 {
 #hero {
   width: 100%;
   height: 75vh;
-  background: url("../img/image006.png") top left;
+  background: url("../img/hero.jpg") top left;
   background-size: cover;
   position: relative;
+}
+
+#hero2{
+  width: 100%;
+  height: 75vh;
+  background: url("../img/image012.jpg") top left;
+  background-size: cover;
+  position: relative;
+}
+#hero2:before {
+  content: "";
+  background: rgba(255, 255, 255, 0.6);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 #hero:before {
@@ -387,8 +404,50 @@ h6 {
   right: 0;
 }
 
+
+
+/* the accordion */
+
+  .faq-list ul {
+    list-style: none;
+    padding: 0;
+    padding-left: 50px;
+    padding-top: 20px;
+  }
+
+  .faq-list ul li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 10px;
+  }
+
+  .faq-list ul li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 10px;
+    height: 10px;
+    background-color: #28a745; /* You can adjust the color as needed */
+    border-radius: 50%;
+  }
+
+
+
+
 #hero .container {
   position: relative;
+}
+
+.border-radius-photo{
+  border-radius: 20px;
+}
+.section-bg2{
+  background-color: #18d26f0c;
+}
+
+.text-justify{
+  text-align: justify !important;
 }
 
 #hero h1 {
@@ -403,8 +462,18 @@ h6 {
 #hero h1 span {
   color: #00a651 ;
 }
+#hero2 h1 span {
+  color: #00a651 ;
+}
 
 #hero h2 {
+  color: #555555;
+  margin: 5px 0 30px 0;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+#hero2 h2 {
   color: #555555;
   margin: 5px 0 30px 0;
   font-size: 24px;
@@ -422,7 +491,7 @@ h6 {
   border-radius: 4px;
   transition: 0.5s;
   color: #fff;
-  background: #00a651;
+  background: #106eea;
 }
 
 #hero .btn-get-started:hover {
@@ -448,7 +517,7 @@ h6 {
 }
 
 #hero .btn-watch-video:hover {
-  color: #00a651;
+  color: #106eea;
 }
 
 #hero .btn-watch-video:hover i {
@@ -526,7 +595,7 @@ section {
 }
 
 .section-title h3 span {
-  color: #00a651;
+  color: #106eea;
 }
 
 .section-title p {
@@ -622,7 +691,7 @@ section {
 }
 
 .featured-services .icon-box:hover::before {
-  background: #00a651;
+  background: #106eea;
   top: 0;
   border-radius: 0px;
 }
@@ -634,7 +703,7 @@ section {
 .featured-services .icon i {
   font-size: 48px;
   line-height: 1;
-  color: #00a651;
+  color: #106eea;
   transition: all 0.3s ease-in-out;
 }
 
@@ -692,7 +761,7 @@ section {
   font-size: 24px;
   padding: 20px;
   margin-right: 15px;
-  color: #00a651;
+  color: #106eea;
   border-radius: 50px;
 }
 
@@ -743,7 +812,7 @@ section {
   width: 1px;
   height: 10px;
   transition: 0.9s;
-  background-color: #00a651;
+  background-color: #106eea;
 }
 
 /*--------------------------------------------------------------
@@ -767,7 +836,7 @@ section {
   left: 50%;
   transform: translateX(-50%);
   font-size: 24px;
-  background: #00a651;
+  background: #106eea;
   color: #fff;
   width: 56px;
   height: 56px;
