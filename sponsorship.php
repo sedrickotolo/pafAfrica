@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>PAF - Team</title>
+  <title>PAF - Sponsorship</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -30,7 +30,7 @@
   <style type="text/css">
   #hero {
   width: 100%;
-  height: 75vh;
+  height: 30vh;
   //background: url("../img/hero.jpg") top left;
   background-size: cover;
   position: relative;
@@ -38,7 +38,7 @@
 
 #hero2{
   width: 100%;
-  height: 75vh;
+  height: 30vh;
   //background: url("../img/image012.jpg") top left;
   background-size: cover;
   position: relative;
@@ -136,10 +136,10 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
     <div class="container" data-aos="zoom-out" data-aos-delay="100">
-      <h1>Mr Nixon Ayena<span> <br>  </span></h1>
-      <h2>Chairman Board </h2>
+      <h1>Child Sponsorship<span> <br>  </span></h1>
+      <h2>Get involve and sponsor a child today </h2>
       <div class="d-flex">
-        <a href="#about" class="btn-get-started scrollto">Get Started</a>
+        <!-- <a href="#about" class="btn-get-started scrollto">Get Started</a> -->
         <!-- <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch Video</span></a> -->
       </div>
     </div>
@@ -150,8 +150,21 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Chairman Board</h2>
-          <h3>Mr Nixon <span>Ayena</span></h3>
+          <h2>Child </h2>
+          <?php
+            if(isset($_GET['n'])){
+              $n = $_GET['n'];
+              $a = $_GET['a'];
+              $g = $_GET['g'];
+            ?>
+
+            
+           <h3><?php echo $n;?>  <!--<span>Amugen</span>--></h3>
+          <?php
+          }else{
+            echo "No Name";
+          }
+          ?>
           <p></p>
         </div>
 
@@ -159,62 +172,39 @@
     </section><!-- End About Section -->
 
     <!-- ======= Team Section ======= -->
-<section id="team" class="team section-bg">
-  <div class="container" data-aos="fade-up">
-
-    <div class="row">
-
-      <!-- Profile Information Column -->
-      <div class="col-lg-4">
-        <img src="assets/img/team/nixon.jpg" class="img-fluid border-radius-photo" alt="Team Member Photo">
-        <p class="mt-3 px-0 text-center">Mr. Nixson Ayena</p>
-      </div>
-
-      <div class="col-lg-8">
-        <!-- First Paragraph -->
-        <div class="row text-justify">
-          <div class="col-lg-12 text-justify">
-            <p>Mr. Nixson Ayena is an accomplished M&E Professional and a Biostatistician with a mission to foster Decision-making through data-driven strategies. His academic journey includes a Master of Biostatistics, in progress at Makerere University, along with a concurrent Master of Monitoring and Evaluation at Uganda Technology and Management University. He holds a postgraduate diploma in Monitoring and Evaluation from Uganda Management Institute and a bachelor’s degree in economics and Statistics from Kyambogo University. This profound education background forms the base of his expertise in the field.
-Mr. Nixson served as a Data Manager at MU-JHU Research Collaboration/MUJHU CARE LTD, he played a crucial role in the MERIT/MIRASOL project. His responsibilities encompass developing study CRFs, maintaining data management plans, providing expert technical guidance, and ensuring flawless data quality through careful oversight.
-Mr. Nixson's career is marked by remarkable achievements in the data field. Supporting both individuals and organizations in data management and analysis. His mastery of vast statistical analysis techniques, including regression, survival analysis, and longitudinal data analysis, has yielded groundbreaking insights into public health. Proficient in STATA, R, SPSS, and digital data collection tools like; Survey CTO, Kobo toolbox, and ODK, he remains at the forefront of data management and analytics.
-Beyond his technical ability, he possesses a deep understanding of epidemiology and statistical methodologies, enriching his contributions to healthcare research. His remarkable ability to translate complex data into accessible visualizations underscores his exceptional talent.
-</p>
+    <section id="team" class="team section-bg">
+      <div class="container" data-aos="">
+      
+        <div class="row">
+    
+          <!-- Profile Information Column -->
+          <div class="col-lg-4 mt-0">
+            <img src="assets/img/image003.jpg" class="img-fluid border-radius-photo" alt="Team Member Photo">
+            <p class="mt-3 px-0 text-center"><?php echo $n;?></p>
+          </div>
+    
+          <div class="col-lg-8">
+            <!-- First Paragraph -->
+            <div class="row text-justify">
+              <div class="col-lg-12 text-justify mt-1">
+                <p class="mt-5 ml-2">name: <b><?php echo $n;?></b></p>
+                <p class=" ml-2">Age: <b><?php echo $a;?></b></p>
+                <p class=" ml-2">Greatest need: <b><?php echo $g;?></b></p>
+                <p class="ml-2">Joan has been a member of the Passion Aid Foundation Africa’s board since 2021. An Insightful organizational programmer with over 9 years’ experience working with network organization implementing high-level projects with mid-sized teams. Possessing dependable relationship building and management skills to deliver faster than projected with history of meeting deadlines. She has vast experience in Strategic Planning, Project Management, Monitoring and Evaluation, Coordination, Training & Development, Appraisal, discipline, Welfare and Rewards, Change Management and Performance Improvement. Joan holds a Bachelor of Arts Degree in Social Development, master’s in business administration and management, and currently serving as Programs Manager at Lango Civil Society Network; a membership umbrella organization made up of Civil Society Organizations, CBOs, FBOs. LACSON has a total of 150 member organizations that are actively doing work in Lango.</p>
+                <button class="btn btn-primary ml-2">Sponsor</button>
+              </div>
+            </div>
+    
+            <!-- Second Paragraph 
+            <div class="row mt-4 text-justify">
+              <div class="col-lg-12">
+                <p>Joan has worked across public, private, and non-governmental sectors, gaining experience in coordination, partnership, advocacy, learner field supervision, peace-building, and training. She serves as a senior clinical instructor, chairperson of the disciplinary committee, and head of the department of midwifery trainer at Jerusalem Institute of Health Sciences. Her commitment, self-drive, and motivation reflect in her continuous efforts to provide quality service and improve the quality of life for people facing health challenges.</p>
+              </div>
+            </div>-->
           </div>
         </div>
-
-        <!-- Second Paragraph 
-        <div class="row mt-4 text-justify">
-          <div class="col-lg-12">
-            <p>His academic journey includes a Master of Biostatistics in progress at Makerere University, concurrent with a Master of Monitoring and Evaluation at Uganda Technology and Management University. Mr. Nixson holds a postgraduate diploma in Monitoring and Evaluation from Uganda Management Institute and a bachelor’s degree in economics and Statistics from Kyambogo University, forming the base of his expertise in the field.</p>
-          </div>
-        </div>-->
-
-        <!-- Third Paragraph
-        <div class="row mt-4 text-justify">
-          <div class="col-lg-12">
-            <p>Mr. Nixson served as a Data Manager at MU-JHU Research Collaboration/MUJHU CARE LTD, playing a crucial role in the MERIT/MIRASOL project. His responsibilities encompassed developing study CRFs, maintaining data management plans, providing expert technical guidance, and ensuring flawless data quality through careful oversight.</p>
-          </div>
-        </div> -->
-
-        <!-- Fourth Paragraph
-        <div class="row mt-4 text-justify">
-          <div class="col-lg-12">
-            <p>Mr. Nixson's career is marked by remarkable achievements in the data field, supporting both individuals and organizations in data management and analysis. His mastery of vast statistical analysis techniques, including regression, survival analysis, and longitudinal data analysis, has yielded groundbreaking insights into public health.</p>
-          </div>
-        </div> -->
-
-        <!-- Fifth Paragraph 
-        <div class="row mt-4 text-justify">
-          <div class="col-lg-12">
-            <p>Proficient in STATA, R, SPSS, and digital data collection tools like Survey CTO, Kobo toolbox, and ODK, he remains at the forefront of data management and analytics. Beyond his technical ability, he possesses a deep understanding of epidemiology and statistical methodologies, enriching his contributions to healthcare research. His remarkable ability to translate complex data into accessible visualizations underscores his exceptional talent.</p>
-          </div>
-        </div> -->
       </div>
-    </div>
-  </div>
-</section>
-<!-- End Team Section -->
-
+    </section>
 
     
 
@@ -226,13 +216,13 @@ Beyond his technical ability, he possesses a deep understanding of epidemiology 
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Contact</h2>
-          <h3><span>Contact Us</span></h3>
-          <p>Reach out to us for any support</p>
+          <h2>Sponsorsip</h2>
+          <h3><span>Sign up to sponsor now</span></h3>
+          <p>Reach out to support a life</p>
         </div>
 
         <div class="row" data-aos="fade-up" data-aos-delay="100">
-          <div class="col-lg-6">
+          <!-- <div class="col-lg-6">
             <div class="info-box mb-4">
               <i class="bx bx-map"></i>
               <h3>Our Address</h3>
@@ -254,14 +244,14 @@ Beyond his technical ability, he possesses a deep understanding of epidemiology 
               <h3>Call Us</h3>
               <p>+256 789 104 159 </p>
             </div>
-          </div>
+          </div> -->
 
         </div>
 
         <div class="row" data-aos="fade-up" data-aos-delay="100">
 
           <div class="col-lg-6">
-            <div style="width: 100%"><iframe width="100%" height="380" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Lira%20City%20+(PAFAfrica)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.maps.ie/population/">Calculate population in area</a></iframe></div>
+            <div style="width: 100%"><img src="assets/img/s.jpg" class="img-fluid border-radius-photo" alt="Team Member Photo"></div>
           </div>
           
 
@@ -276,17 +266,17 @@ Beyond his technical ability, he possesses a deep understanding of epidemiology 
                 </div>
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                <input type="phone" class="form-control" name="subject" id="subject" placeholder="Phone Number" required>
               </div>
               <div class="form-group">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                <!-- <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea> -->
               </div>
               <div class="my-3">
                 <div class="loading">Loading</div>
                 <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
+                <div class="sent-message">Your registration was successful. Thank you!</div>
               </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
+              <div class="text-center"><button type="submit">Submit</button></div>
             </form>
           </div>
 

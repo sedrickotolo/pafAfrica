@@ -27,11 +27,65 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-  <style>
-    /* Add any custom styles here */
-    body {
-        padding-top: 56px;
-    }
+  <style type="text/css">
+  #hero {
+  width: 100%;
+  height: 75vh;
+  //background: url("../img/hero.jpg") top left;
+  background-size: cover;
+  position: relative;
+}
+
+#hero2{
+  width: 100%;
+  height: 75vh;
+  //background: url("../img/image012.jpg") top left;
+  background-size: cover;
+  position: relative;
+}
+#hero2:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#hero:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+
+
+#hero h1 {
+  margin: 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+#hero h1 span {
+  color: #00a651 ;
+}
+
+
+#hero h2 {
+  color: #fff;
+  margin: 5px 0 30px 0;
+  font-size: 24px;
+  font-weight: 400;
+}
+
 </style>
 
 
@@ -59,7 +113,7 @@
   <header id="header" class="d-flex align-items-center">
     <div class="container d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo"><img src="assets/img/image001.png" alt=""></a>
+      <a href="index.html" class="logo"><img src="assets/img/image001.png" style="width: 85px; height: 85px;" alt=""></a>
      
 
       <nav id="navbar" class="navbar">
@@ -82,11 +136,11 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
     <div class="container" data-aos="zoom-out" data-aos-delay="100">
-      <h1>Education<span> <br>  </span></h1>
-      <h2>Passion </h2>
+      <h1>Joan Akullo<span> <br>  </span></h1>
+      <h2>Board member </h2>
       <div class="d-flex">
         <a href="#about" class="btn-get-started scrollto">Get Started</a>
-        <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
+        <!-- <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch Video</span></a> -->
       </div>
     </div>
   </section><!-- End Hero -->
@@ -112,7 +166,7 @@
     
           <!-- Profile Information Column -->
           <div class="col-lg-4">
-            <img src="assets/img/team/team-1.jpg" class="img-fluid border-radius-photo" alt="Team Member Photo">
+            <img src="assets/img/team/Picture1.jpg" class="img-fluid border-radius-photo" alt="Team Member Photo">
             <p class="mt-3 px-0 text-center">Joan Akullo</p>
           </div>
     
@@ -120,16 +174,16 @@
             <!-- First Paragraph -->
             <div class="row text-justify">
               <div class="col-lg-12 text-justify mt-5">
-                <p>Joan Akullo, Board Member of Passion Aid Foundation Africa since 2021, is a dedicated professional with over 10 years of experience in health service provision. She holds a Diploma in Midwifery from Nsambya School of Nursing and Midwifery and a Bachelor of Science in Midwifery from Clarke International University. Currently pursuing a Postgraduate Diploma in Medical Education, Joan possesses extensive knowledge and experience in maternal child health, reproductive health, counseling, HIV/AIDS prevention, care support, family planning, community-based service delivery, and fieldwork.</p>
+                <p>Joan has been a member of the Passion Aid Foundation Africa’s board since 2021. She attended Nsambya school of nursing and midwifery and was awarded Diploma in midwifery, she went to Clarke international University where she was awarded a Bachelor of science in Midwifery and currently pursuing her Post graduate diploma in medical education. Joan has over 10 years working experience in health service provision, a wider knowledge and experience in maternal child health, reproductive health issues, counselling, HIV/AIDS prevention, care support, Family Planning, community -based service delivery and field work experience. She has worked in public, private and non- governmental sectors and gained experience in coordination, partnership, advocacy, learners field supervision, peace building and training plus mentorships. She is a highly committed, self-driven, self-motivated with a zeal to continually provide quality service, improve the quality of life of the people with ill health. Joan also serves as senior clinical instructor, chairperson disciplinary committee and head of department midwifery trainer at Jerusalem Institute of Health Sciences.  </p>
               </div>
             </div>
     
-            <!-- Second Paragraph -->
+            <!-- Second Paragraph 
             <div class="row mt-4 text-justify">
               <div class="col-lg-12">
                 <p>Joan has worked across public, private, and non-governmental sectors, gaining experience in coordination, partnership, advocacy, learner field supervision, peace-building, and training. She serves as a senior clinical instructor, chairperson of the disciplinary committee, and head of the department of midwifery trainer at Jerusalem Institute of Health Sciences. Her commitment, self-drive, and motivation reflect in her continuous efforts to provide quality service and improve the quality of life for people facing health challenges.</p>
               </div>
-            </div>
+            </div>-->
           </div>
         </div>
       </div>
@@ -259,7 +313,7 @@
             </ul>
           </div>
 
-          <div class="col-lg-3 col-md-6 footer-links">
+          <!-- <div class="col-lg-3 col-md-6 footer-links">
             <h4>Our Services</h4>
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
@@ -268,9 +322,9 @@
               <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
             </ul>
-          </div>
+          </div> -->
 
-          <div class="col-lg-3 col-md-6 footer-links">
+          <!-- <div class="col-lg-3 col-md-6 footer-links">
             <h4>Our Social Networks</h4>
             <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
             <div class="social-links mt-3">
@@ -280,7 +334,7 @@
               <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
               <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
             </div>
-          </div>
+          </div> -->
 
         </div>
       </div>
@@ -288,14 +342,14 @@
 
     <div class="container py-4">
       <div class="copyright">
-        &copy; Copyright <strong><span>BizLand</span></strong>. All Rights Reserved
+        &copy; Copyright <strong><span>PAFAfrica.org</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
         <!-- You can delete the links only if you purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/bizland-bootstrap-business-template/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        Designed by <a href="https://bootstrapmade.com/">Dovin Ssenyange</a>
       </div>
     </div>
   </footer><!-- End Footer -->
