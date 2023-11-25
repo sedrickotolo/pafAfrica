@@ -31,7 +31,7 @@
   #hero {
   width: 100%;
   height: 30vh;
-  //background: url("../img/hero.jpg") top left;
+  background: url("assets/img/bg.jpg") top left;
   background-size: cover;
   position: relative;
 }
@@ -156,6 +156,7 @@
               $n = $_GET['n'];
               $a = $_GET['a'];
               $g = $_GET['g'];
+              $i = $_GET['i'];
             ?>
 
             
@@ -179,7 +180,7 @@
     
           <!-- Profile Information Column -->
           <div class="col-lg-4 mt-0">
-            <img src="assets/img/image003.jpg" class="img-fluid border-radius-photo" alt="Team Member Photo">
+            <img src="assets/img/<?php echo $i;?>" class="img-fluid border-radius-photo" alt="Team Member Photo">
             <p class="mt-3 px-0 text-center"><?php echo $n;?></p>
           </div>
     
@@ -191,7 +192,7 @@
                 <p class=" ml-2">Age: <b><?php echo $a;?></b></p>
                 <p class=" ml-2">Greatest need: <b><?php echo $g;?></b></p>
                 <p class="ml-2">Joan has been a member of the Passion Aid Foundation Africa’s board since 2021. An Insightful organizational programmer with over 9 years’ experience working with network organization implementing high-level projects with mid-sized teams. Possessing dependable relationship building and management skills to deliver faster than projected with history of meeting deadlines. She has vast experience in Strategic Planning, Project Management, Monitoring and Evaluation, Coordination, Training & Development, Appraisal, discipline, Welfare and Rewards, Change Management and Performance Improvement. Joan holds a Bachelor of Arts Degree in Social Development, master’s in business administration and management, and currently serving as Programs Manager at Lango Civil Society Network; a membership umbrella organization made up of Civil Society Organizations, CBOs, FBOs. LACSON has a total of 150 member organizations that are actively doing work in Lango.</p>
-                <button class="btn btn-primary ml-2">Sponsor</button>
+                <a href="#contact"><button class="btn btn-primary ml-2">Sponsor</button></a>
               </div>
             </div>
     
